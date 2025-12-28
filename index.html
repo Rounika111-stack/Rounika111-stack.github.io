@@ -3,179 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-    <title>Amazon Clone</title>
-   
-    <style>
-       
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #EAEDED;
-        }
-
-        
-        .navbar {
-            background-color: #131921;
-            color: white;
-            display: flex;
-            align-items: center;
-            padding: 10px 20px;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #FF9900;
-            margin-right: 20px;
-        }
-
-        .search-bar {
-            flex: 1;
-            display: flex;
-        }
-
-        .search-bar input {
-            width: 100%;
-            padding: 8px;
-            border: none;
-            outline: none;
-        }
-
-        .search-bar button {
-            background-color: #febd69;
-            border: none;
-            padding: 8px 15px;
-            cursor: pointer;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 15px;
-            margin-left: 20px;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-
-        
-        .hero {
-            background: url('https://m.media-amazon.com/images/I/71tIrZqybrL._SX3000_.jpg') no-repeat center center/cover;
-            height: 300px;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .hero-message {
-            background-color: white;
-            padding: 10px 20px;
-            font-size: 1rem;
-        }
-
-        
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .product {
-            background-color: white;
-            padding: 15px;
-            border-radius: 5px;
-            text-align: center;
-        }
-
-        .product img {
-            max-width: 100%;
-            height: 200px;
-            object-fit: contain;
-        }
-
-        .product h3 {
-            font-size: 1rem;
-            margin: 10px 0;
-        }
-
-        .product button {
-            background-color: #FFD814;
-            border: none;
-            padding: 8px 12px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        
-        footer {
-            background-color: #131921;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Amazon clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+  <header>
+    <div class="navbar">
 
-     <div class="navbar">
-        <div class="logo">amazon</div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search Amazon">
-            <button></button>
+        <div class="nav-logo  border">
+            <div class="logo"></div>
         </div>
-        <div class="nav-links">
-            <a href="#">Sign In</a>
-            <a href="#">Orders</a>
-            <a href="#">Cart <i class="fa-solid fa-cart-shopping"></i></a>
+
+        <div clss="nav-location  border">
+            <P class="p1">Deliver to</P>
+            <div class="loc-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <b><p class="p2">India</p></b>
+            </div>
+        </div>
+
+        <div class="nav-search">
+            <select class="search">
+                <option>All</option>
+            </select>
+            <input class="input" placeholder="Search Amazon">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="lang border" >
+            <div class="lang-icon">
+                <i class="fa-solid fa-flag-usa"></i>
+            </div>
+            <select class="lang1">
+                <b><option>EN</option></b>
+                <option value="English">English</option>
+                <option value="Deutsch">Deutsch</option>
+                <option value="Portugues">Portugues</option>
+            </select>
+        </div>
+
+        <div class="nav-acc border">
+            <p class="first">Hello,sign in</p>
+            <select class="list">
+                <option>Accounts & Lists</option>
+            </select>
+        </div>
+
+        <div class="nav-return border">
+            <p class="second">Returns</p>
+            <p class="third">& Orders</p>
+        </div>
+
+        <div class="nav-cart border">
+            <div class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <p class="fourth">Cart</p>
         </div>
     </div>
 
-    
-    <div class="hero">
-        <div class="hero-message">
-            You are on Amazon . Shop now for amazing deals!
+    <div class="panel">
+        <div class="menu">
+            <div class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+            </div>
+            <p>All</p>
+        </div>
+        <div class="panel11 ">
+             <p class="border">Today's Deals</p>
+             <p class="border" >Prime Video</p>
+             <p class="border" >Registry</p>
+             <p class="border" >Gift Cards</p>
+             <p class="border" >Customer Service</p>   
+             <p class="border">Sell</p> 
         </div>
     </div>
-
-    
-    <div class="products">
-        <div class="product">
-            <img src="https://m.media-amazon.com/images/I/81QpkIctqPL._AC_UL320_.jpg" alt="Product 1">
-            <h3>Wireless Headphones</h3>
-            <button>Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="https://m.media-amazon.com/images/I/71kWymZ+P-L._AC_UL320_.jpg" alt="Product 2">
-            <h3>Smart Watch</h3>
-            <button>Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="https://m.media-amazon.com/images/I/81vpsIs58WL._AC_UL320_.jpg1" alt="Product 3">
-            <h3>Bluetooth Speaker</h3>
-            <button>Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="https://m.media-amazon.com/images/I/71vFKBpKakL._AC_UL320_.jpg" alt="Product 4">
-            <h3>Kindle Reader</h3>
-            <button>Add to Cart</button>
-        </div>
+  </header>
+  <div class="hero-section">
+    <div class="hero-mess">
+        <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.<a href="#"> Click here to go to amazon.in</a></p>
     </div>
+  </div>
 
-   
-    <footer>
-        © 2025 Amazon | Created for Educational Purposes
-    </footer>
 
 </body>
 </html>
